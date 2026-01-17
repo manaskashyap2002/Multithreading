@@ -151,5 +151,81 @@ public class multithredingUsingRunnableInterface {
 }
 
 
+# Using lambda expression 
+
+public class multithredingUsingLabda {
+     public static void main(String[] args) {
+		Thread t1 = new Thread (()->{
+			 for(int i=0;i<=5;i++)
+			  {
+				  System.out.println("Hii");
+				  try {
+					  Thread.sleep(1000);  
+				  }
+				  catch(Exception e) {};
+			  }
+		});
+		
+		
+		Thread t2 = new Thread (()->{
+			 for(int i=0;i<=5;i++)
+			  {
+				  System.out.println("helllo");
+				  try {
+					  Thread.sleep(1000);  
+				  }
+				  catch(Exception e) {};
+			  }
+		});
+		
+		t1.start();
+		 try {
+			  Thread.sleep(40);  
+		  }
+		  catch(Exception e) {};
+		t2.start();
+	}
+}
+
+
+
+--------------------------------------------------------------------------------------------
+## Methods is Multithreading
+
+# join() 
+
+The join() method makes one thread wait until another thread finishes execution.
+
+thread.join();
+
+Key Points (join())
+
+join() pauses current thread
+
+Used for thread synchronization
+
+Throws InterruptedException
+
+Commonly used in main thread
+
+# isAlive()
+
+The isAlive() method checks whether a thread is still running.
+
+thread.isAlive();
+
+ey Points (isAlive())
+
+Returns true → thread is running
+
+Returns false → thread not started or finished
+
+Used to check thread state
+
+Does not stop the thread
+
+
+
+
 
 
