@@ -234,8 +234,11 @@ These methods are used to set and get the priority of a thread.
 Thread priority helps the scheduler decide execution order.
 
 # Thread Priority Range
+
 MIN_PRIORITY  = 1
+
 NORM_PRIORITY = 5   (Default)
+
 MAX_PRIORITY  = 10
 
 
