@@ -224,8 +224,18 @@ Used to check thread state
 
 Does not stop the thread
 
+## setName() and getName() Methods in Thread
 
+These methods are used to assign a name to a thread and retrieve the thread name.
 
+## setPriority() and getPriority() Methods in Thread
 
+These methods are used to set and get the priority of a thread.
+Thread priority helps the scheduler decide execution order.
+
+# Thread Priority Range
+MIN_PRIORITY  = 1
+NORM_PRIORITY = 5   (Default)
+MAX_PRIORITY  = 10
 
 
