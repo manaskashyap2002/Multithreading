@@ -214,7 +214,7 @@ The isAlive() method checks whether a thread is still running.
 
 thread.isAlive();
 
-ey Points (isAlive())
+key Points (isAlive())
 
 Returns true → thread is running
 
