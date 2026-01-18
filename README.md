@@ -245,3 +245,89 @@ MAX_PRIORITY  = 10
 #  Synchronized
 
 The synchronized keyword in Java ensures that only one thread can access a shared resource at a time, preventing data inconsistency.
+
+# How synchronized works?
+
+Every object in Java has a lock (monitor)
+
+When a thread enters a synchronized method/block:
+
+🔒 It acquires the lock
+
+Other threads:
+
+⏳ Wait until lock is released
+
+class Counter {
+    int count = 0;
+
+    synchronized void increment() {
+        count++;
+    }
+}
+
+
+------------------------------------------------------------------------------------------
+
+
+# Difference between Process and Thread
+
+Process: A program in execution with its own memory space
+
+Thread: A smallest unit of execution inside a process, sharing memory
+
+Real-Life Example (Easy to Explain)
+
+Process → A house
+
+Thread → Rooms inside the house
+
+All rooms share electricity & water (memory).
+
+
+
+# Which is better: Thread or Runnable?
+
+Answer:
+Runnable is better because:
+
+Java supports multiple inheritance through interfaces
+
+Better object-oriented design
+
+# Difference between start() and run()?
+
+Answer:
+
+start() → creates a new thread
+
+run() → executes like a normal method
+
+📌 Calling run() directly does not create a new thread.
+
+
+# Can we restart a thread?
+
+Answer:
+❌ No. Once a thread is dead, it cannot be restarted.
+
+# What is Volatile?
+
+Answer:
+volatile ensures visibility of changes to variables across threads.
+
+# What is Thread Pool?
+
+Answer:
+Thread pool manages a fixed number of reusable threads, improving performance.
+
+# What happens if two threads have same priority?
+
+Answer:
+Execution depends on Thread Scheduler, not guaranteed order.
+
+
+# Can we make constructor synchronized?
+
+Answer:
+❌ No. Constructors cannot be synchronized.
