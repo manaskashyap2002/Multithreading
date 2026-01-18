@@ -242,3 +242,5 @@ NORM_PRIORITY = 5   (Default)
 MAX_PRIORITY  = 10
 
 
+#  Synchronized
+The synchronized keyword in Java ensures that only one thread can access a shared resource at a time, preventing data inconsistency.
